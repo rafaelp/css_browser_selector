@@ -1,8 +1,8 @@
 CSS Browser Selector
 =====================
 
-CSS Browser Selector is a very small javascript with less than 10 lines and less than 1kb which empower CSS selectors. It gives you the ability to write specific CSS code for each operating system and each browser.<br/>
-More info: [http://rafael.adm.br/css_browser_selector](http://rafael.adm.br/css_browser_selector)
+CSS Browser Selector is a very small javascript with just one line and less than 1kb which empower CSS selectors. It gives you the ability to write specific CSS code for each operating system and each browser.<br/>
+More info: [http://rafael.adm.br/css\_browser\_selector](http://rafael.adm.br/css_browser_selector)
 
 EXAMPLE
 --------
@@ -32,6 +32,9 @@ EXAMPLE
     .webkit .example {
       background-color: black
     }
+		.chrome .example {
+			background-color: cyan
+		}
     .example {
       width: 100px;
       height: 100px;
@@ -60,7 +63,7 @@ Rafael Lima
 CONTRIBUTORS
 --------
 
-[http://rafael.adm.br/css_browser_selector#contributors](http://rafael.adm.br/css_browser_selector#contributors)
+[http://rafael.adm.br/css\_browser\_selector#contributors](http://rafael.adm.br/css_browser_selector#contributors)
 
 
 
