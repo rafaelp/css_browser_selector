@@ -32,9 +32,9 @@ EXAMPLE
     .webkit .example {
       background-color: black
     }
-		.chrome .example {
-			background-color: cyan
-		}
+    .chrome .example {
+      background-color: cyan
+    }
     .example {
       width: 100px;
       height: 100px;
