@@ -1,11 +1,9 @@
-CSS Browser Selector
-=====================
+# CSS Browser Selector
 
 CSS Browser Selector is a very small javascript with just one line and less than 1kb which empower CSS selectors. It gives you the ability to write specific CSS code for each operating system and each browser.<br/>
 More info: [http://rafael.adm.br/css\_browser\_selector](http://rafael.adm.br/css_browser_selector)
 
-EXAMPLE
---------
+## EXAMPLE
 
     <style type="text/css">
     .ie .example {
@@ -46,24 +44,27 @@ EXAMPLE
     </style>
 
 
-LICENSE
---------
+## LICENSE
 
 [http://creativecommons.org/licenses/by/2.5/](http://creativecommons.org/licenses/by/2.5/)
 
-AUTHOR
---------
+## AUTHOR
 
-Rafael Lima
+### **Rafael Lima**
 
-[http://rafael.adm.br](http://rafael.adm.br)
+Blog: [http://rafael.adm.br](http://rafael.adm.br)
 
-[http://twitter.com/rafaelp](http://twitter.com/rafaelp)
+Podcast: [http://rafael.adm.br/voltandopracasa](http://rafael.adm.br/voltandopracasa)
 
-CONTRIBUTORS
---------
+Github: [http://github.com/rafaelp](http://github.com/rafaelp)
+
+Twitter: [http://twitter.com/rafaelp](http://twitter.com/rafaelp)
+
+### Did you like?
+
+[Recommend me at Working With Rails](http://workingwithrails.com/recommendation/new/person/14248-rafael-lima)
+
+## CONTRIBUTORS
 
 [http://rafael.adm.br/css\_browser\_selector#contributors](http://rafael.adm.br/css_browser_selector#contributors)
-
-
 
