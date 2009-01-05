@@ -1,6 +1,6 @@
 # CSS Browser Selector
 
-CSS Browser Selector is a very small javascript with just one line and less than 1kb which empower CSS selectors. It gives you the ability to write specific CSS code for each operating system and each browser.<br/>
+CSS Browser Selector is a very small javascript with just one line which empower CSS selectors. It gives you the ability to write specific CSS code for each operating system and each browser.<br/>
 More info: [http://rafael.adm.br/css\_browser\_selector](http://rafael.adm.br/css_browser_selector)
 
 ## EXAMPLE
