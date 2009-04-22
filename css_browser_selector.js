@@ -1,5 +1,5 @@
 /*
-CSS Browser Selector v0.3.1
+CSS Browser Selector v0.3.2
 Rafael Lima (http://rafael.adm.br)
 http://rafael.adm.br/css_browser_selector
 License: http://creativecommons.org/licenses/by/2.5/
