@@ -37,5 +37,4 @@ function css_browser_selector(u) {
     h.className += ' ' + c;
     return c;
 }
-;
 css_browser_selector(navigator.userAgent);
