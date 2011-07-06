@@ -15,6 +15,9 @@ More info: [http://rafael.adm.br/css\_browser\_selector](http://rafael.adm.br/cs
     .gecko .example {
       background-color: gray
     }
+    xp.ff5 .example {
+      background-color: #abc
+    }
     .win.gecko .example {
       background-color: red
     }
