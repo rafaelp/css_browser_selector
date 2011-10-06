@@ -12,6 +12,7 @@ modified, now detects:
 any version of Firefox
 more versions of Windows (Win7, Vista, XP, Win2k)
 more versions of IE under unique conditions
+more detailed support for Opera
 if "no-js" in HTML class: removes and replaces with "js" (<html class="no-js">)
 
 identifies
@@ -40,7 +41,7 @@ function css_browser_selector(u)
 		(!(/opera|webtv/i.test(ua))&&/msie\s(\d)/.test(ua))?('ie ie'+(/trident\/4\.0/.test(ua) ? '8' : RegExp.$1))
 		:is('firefox/')?g+" "+f+(/firefox\/(\d+(\.?\d+)*)/.test(ua)?' '+f+RegExp.$1.replace(/\./g,"").substr(0,2):'')	
 		:is('gecko/')?g
-		:is('opera')?o+(/version\/(\d+)/.test(ua)?' '+o+RegExp.$1:(/opera(\s|\/)(\d+)/.test(ua)?' '+o+RegExp.$2:''))
+		:is('opera')?o+(/version\/((\d+)(\.\d+)*)/.test(ua)?' '+o+RegExp.$2 + ' '+o+RegExp.$2+(RegExp.$3).replace(".","_").substr(0,2):(/opera(\s|\/)(\d+)/.test(ua)?' '+o+RegExp.$2:''))
 		:is('konqueror')?'konqueror'
 		:is('blackberry')?m+' blackberry'
 		:is('android')?m+' android'
