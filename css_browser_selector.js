@@ -9,9 +9,9 @@ v0.5.0 2011-08-24
 andrew relkin
 
 modified, now detects:
-  any version of Firefox
-	more versions of Windows (Win7, Vista, XP, Win2k)
-	more versions of IE under unique conditions
+any version of Firefox
+more versions of Windows (Win7, Vista, XP, Win2k)
+more versions of IE under unique conditions
 if "no-js" in HTML class: removes and replaces with "js" (<html class="no-js">)
 
 identifies
@@ -68,8 +68,7 @@ function css_browser_selector(u)
 		];
 	var c = b.join(' ');
 	/* hat tip, paul irish: http://paulirish.com/2009/avoiding-the-fouc-v3/ */
-	h.className =  h.className.replace(/no-?js/g,'');
-	h.className += (h.className.length>0?' ':'')+c;
+	h.className =  ( h.className.replace(/no-?js/g,"") + " " + c ).replace(/^ /, "");
 	return c;
 	}
 	
