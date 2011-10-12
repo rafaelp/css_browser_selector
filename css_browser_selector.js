@@ -10,7 +10,7 @@ andrew relkin
 
 modified, now detects:
 any version of Firefox
-more versions of Windows (Win7, Vista, XP, Win2k)
+more versions of Windows (Win8, Win7, Vista, XP, Win2k)
 more versions of IE under unique conditions
 more detailed support for Opera
 if "no-js" in HTML class: removes and replaces with "js" (<html class="no-js">)
@@ -58,7 +58,8 @@ function css_browser_selector(u)
 		:is('webtv')?'webtv'
 		/* hat tip: https://github.com/saar/css_browser_selector */
 		:is('win')?'win'+
-				(is('windows nt 6.1')?' win7'
+				(is('windows nt 6.2')?' win8'
+				:is('windows nt 6.1')?' win7'
 				:is('windows nt 6.0')?' vista'
 				:is('windows nt 5.2') || is('windows nt 5.1') ? ' xp' 
 				:is('windows nt 5.0')?' win2k': ''
