@@ -5,7 +5,7 @@ More info: [http://rafael.adm.br/css\_browser\_selector](http://rafael.adm.br/cs
 
 <p>other fork suggestions combined into one new version; now detects:
 <br/>any version of Firefox
-<br/>more versions of Windows (Win7, Vista, XP, Win2k)
+<br/>more versions of Windows (Win8, Win7, Vista, XP, Win2k)
 <br/>more versions of IE under unique conditions
 <br/>if "no-js" in HTML class: removes and replaces with "js" (<html class="no-js">)</p>
 
