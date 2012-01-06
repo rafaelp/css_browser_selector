@@ -26,12 +26,15 @@ more detailed WIN detection:
 no-js to js:
 <br />paul irish: http://paulirish.com/2009/avoiding-the-fouc-v3/
 
+mac versioning
+<br />https://github.com/haraldmartin/css_browser_selector
+
 andrew relkin
 
 v0.6.5 2012-??-??
 <br />language detection
 <br />RIM Playbook added
-<br />versioning for Chrome, Blackberry, Android 
+<br />versioning for Chrome, Blackberry, Android, Mac
 <br />Android device detection
 <br />altered how 'mobile' is deterimed to be added to the class string
 
