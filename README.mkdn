@@ -41,7 +41,7 @@ v0.5.0 2011-08-24
 <br />any version of Firefox
 <br />more versions of Windows (Win8 [tentative], Win7, Vista, XP, Win2k)
 <br />more versions of IE under unique conditions
-<br />if "no-js" in HTML class: removes and replaces with "js" (<html class="no-js">)
+<br />if "no-js" in HTML class: removes and replaces with "js" (\<html class="no-js"\>)
 
 ## resources:
 
