@@ -17,30 +17,30 @@ Identifies
 contributors to 0.5, 0.6, 0.6.5
 
 more detailed IE detection:
-https://github.com/kevingessner/css_browser_selector/
+<br />https://github.com/kevingessner/css_browser_selector/
 
 more detailed WIN detection:
-https://github.com/saar/css_browser_selector
+<br />https://github.com/saar/css_browser_selector
 
 no-js to js:
-paul irish: http://paulirish.com/2009/avoiding-the-fouc-v3/
+<br />paul irish: http://paulirish.com/2009/avoiding-the-fouc-v3/
 
 andrew relkin
 
 v0.6.5 2012-01-??
-language detection
-RIM Playbook added
-versioning for Chrome, Blackberry, Android (+ Android device detection)
-altered how 'mobile' is deterimed to be added to the class string
+<br />language detection
+<br />RIM Playbook added
+<br />versioning for Chrome, Blackberry, Android (+ Android device detection)
+<br />altered how 'mobile' is deterimed to be added to the class string
 
 v0.6.0 2011-10-20
-more detailed support for Opera, Chrome, Safari (and revised support for Firefox)
+<br />more detailed support for Opera, Chrome, Safari (and revised support for Firefox)
 
 v0.5.0 2011-08-24
-any version of Firefox
-more versions of Windows (Win8 [tentative], Win7, Vista, XP, Win2k)
-more versions of IE under unique conditions
-if "no-js" in HTML class: removes and replaces with "js" (<html class="no-js">)
+<br />any version of Firefox
+<br />more versions of Windows (Win8 [tentative], Win7, Vista, XP, Win2k)
+<br />more versions of IE under unique conditions
+<br />if "no-js" in HTML class: removes and replaces with "js" (<html class="no-js">)
 
 ## resources:
 
