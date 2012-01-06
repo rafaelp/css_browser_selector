@@ -12,7 +12,7 @@ Identifies
 <br />rendering engines: Webkit; Mozilla; Gecko
 <br />platforms/OSes: Mac; Win: Win8, Win7, Vista, WinXP, Win2k, WinNT; FreeBSD; Linux/x11 
 <br />devices: Ipod; Ipad; Iphone; WebTV; Blackberry; Android; J2me; RIM Playbook; mobile (generic)
-<br />enabled technology: JS (use in conjunction with <html class="no-js"> for even more granular control)
+<br />enabled technology: JS (use in conjunction with &lt;html class="no-js"> for even more granular control)
 <br />language detection
 
 contributors to 0.5, 0.6, 0.6.5:
