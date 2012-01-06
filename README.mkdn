@@ -30,7 +30,8 @@ andrew relkin
 v0.6.5 2012-01-??
 <br />language detection
 <br />RIM Playbook added
-<br />versioning for Chrome, Blackberry, Android (+ Android device detection)
+<br />versioning for Chrome, Blackberry, Android 
+<br />Android device detection
 <br />altered how 'mobile' is deterimed to be added to the class string
 
 v0.6.0 2011-10-20
@@ -45,19 +46,19 @@ v0.5.0 2011-08-24
 ## resources:
 
 navigator.userAgent strings:
-http://en.wikipedia.org/wiki/User_agent
-http://www.useragentstring.com/pages/useragentstring.php
-http://www.user-agents.org
-http://www.zytrax.com/tech/web/mobile_ids.html
+<br />http://en.wikipedia.org/wiki/User_agent
+<br />http://www.useragentstring.com/pages/useragentstring.php
+<br />http://www.user-agents.org
+<br />http://www.zytrax.com/tech/web/mobile_ids.html
 
 language list:
-http://msdn.microsoft.com/en-us/library/ms533052%28v=vs.85%29.aspx
+<br />http://msdn.microsoft.com/en-us/library/ms533052%28v=vs.85%29.aspx
 
 nt list
-http://en.wikipedia.org/wiki/Windows_NT
+<br />http://en.wikipedia.org/wiki/Windows_NT
 
 blackberry user agent string interpertation:
-http://supportforums.blackberry.com/t5/Web-and-WebWorks-Development/How-to-detect-the-BlackBerry-Browser/ta-p/559862
+<br />http://supportforums.blackberry.com/t5/Web-and-WebWorks-Development/How-to-detect-the-BlackBerry-Browser/ta-p/559862
 
 ## EXAMPLE
 
