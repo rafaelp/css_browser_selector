@@ -6,13 +6,14 @@
 	.header h3 { font-size:18px; margin-top:12px; }
 	.pass { color:#090; background-color:#CFC; }
 	.fail { color:#900; background-color:#FCC; }
-	.generate, .generated_classes { color:#009; background-color:#CCF; }
-	.fail, .result, .generate {  -webkit-border-radius:8px; -moz-border-radius:8px;  border-radius:8px; }
+	.partial, .generated_classes { color:#009; background-color:#CCF; }
+	.fail, .result, .partial {  -webkit-border-radius:8px; -moz-border-radius:8px;  border-radius:8px; }
 	.failed, .generated_classes { -webkit-border-radius:0px 0px 8px 8px; -moz-border-radius:0px 0px 8px 8px;  border-radius:0px 0px 8px 8px; }
 	.full_test .generated_classes { border-radius:0px; }
 	.result, #results { margin-top:10px;  }
 	.expected, .got { }
 	.odd {  }
+	pre { font-family:"Courier New",monospace;font-size:11px; }
 	#container { width:800px; margin:0px auto; }
 	#results { border-top:1px solid #CCC;  }
 	.passed, .fail, .result, .user_agent, .generated_classes { padding:8px; }		

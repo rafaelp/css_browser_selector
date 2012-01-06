@@ -60,7 +60,7 @@ function css_browser_selector(u)
 			) 
 
 		:is('android') ? 
-			(  ' ' + a +
+			(  a +
 				( /Version\/(\d+)(\.(\d+))+/i.test(ua)
 					? " " + a+ RegExp.$1 + " "+a+ RegExp.$1+RegExp.$2.replace('.','_')
 					: '')
