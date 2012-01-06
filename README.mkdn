@@ -61,6 +61,10 @@ nt list
 blackberry user agent string interpertation:
 <br />http://supportforums.blackberry.com/t5/Web-and-WebWorks-Development/How-to-detect-the-BlackBerry-Browser/ta-p/559862
 
+javascript compression:
+<br />http://minifyjavascript.com
+
+
 ## EXAMPLE
 
     <style type="text/css"> 
