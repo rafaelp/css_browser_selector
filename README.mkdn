@@ -9,12 +9,12 @@ Identifies
 <br />browsers: Firefox; IE; Opera; Safari; Chrome, Konqueror, Iron
 <br />browser versions: (most importantly: ie6, ie7, ie8, ie9)
 <br />rendering engines: Webkit; Mozilla; Gecko
-<br />platforms/OSes: Mac; Win: Win7, Vista, XP, Win2k; FreeBSD; Linux/x11 
-<br />devices: Ipod; Ipad; Iphone; WebTV; Blackberry; Android; J2me; RIM Playbook; mobile(generic)
+<br />platforms/OSes: Mac; Win: Win8, Win7, Vista, WinXP, Win2k, WinNT; FreeBSD; Linux/x11 
+<br />devices: Ipod; Ipad; Iphone; WebTV; Blackberry; Android; J2me; RIM Playbook; mobile (generic)
 <br />enabled technology: JS (use in conjunction with <html class="no-js"> for even more granular control)
 <br />language detection
 
-contributors to 0.5, 0.6, 0.6.5
+contributors to 0.5, 0.6, 0.6.5:
 
 more detailed IE detection:
 <br />https://github.com/kevingessner/css_browser_selector/
@@ -27,7 +27,7 @@ no-js to js:
 
 andrew relkin
 
-v0.6.5 2012-01-??
+v0.6.5 2012-??-??
 <br />language detection
 <br />RIM Playbook added
 <br />versioning for Chrome, Blackberry, Android 
