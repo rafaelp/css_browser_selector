@@ -6,13 +6,13 @@ CSS Browser Selector is a very small javascript with just one line which empower
 <br />beta/experimental versions: [https://github.com/verbatim/css_browser_selector/](https://github.com/verbatim/css_browser_selector/)
 
 Identifies
-browsers: Firefox; IE; Opera; Safari; Chrome, Konqueror, Iron
-browser versions: (most importantly: ie6, ie7, ie8, ie9)
-rendering engines: Webkit; Mozilla; Gecko
-platforms/OSes: Mac; Win: Win7, Vista, XP, Win2k; FreeBSD; Linux/x11 
-devices: Ipod; Ipad; Iphone; WebTV; Blackberry; Android; J2me; RIM Playbook; mobile(generic)
-enabled technology: JS (use in conjunction with <html class="no-js"> for even more granular control)
-language detection
+<br />browsers: Firefox; IE; Opera; Safari; Chrome, Konqueror, Iron
+<br />browser versions: (most importantly: ie6, ie7, ie8, ie9)
+<br />rendering engines: Webkit; Mozilla; Gecko
+<br />platforms/OSes: Mac; Win: Win7, Vista, XP, Win2k; FreeBSD; Linux/x11 
+<br />devices: Ipod; Ipad; Iphone; WebTV; Blackberry; Android; J2me; RIM Playbook; mobile(generic)
+<br />enabled technology: JS (use in conjunction with <html class="no-js"> for even more granular control)
+<br />language detection
 
 contributors to 0.5, 0.6, 0.6.5
 
