@@ -53,6 +53,9 @@ navigator.userAgent strings:
 <br />http://www.user-agents.org
 <br />http://www.zytrax.com/tech/web/mobile_ids.html
 
+history of the user agent string:
+<br />http://www.nczonline.net/blog/2010/01/12/history-of-the-user-agent-string/
+
 language list:
 <br />http://msdn.microsoft.com/en-us/library/ms533052%28v=vs.85%29.aspx
 
