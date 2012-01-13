@@ -107,16 +107,15 @@ aspect ratio:
     </style>
 
 
-## LICENSE
+LICENSE
 <br />http://creativecommons.org/licenses/by/2.5/
 
-## ORIGINAL AUTHOR: Rafael Lima
+ORIGINAL AUTHOR: Rafael Lima
 <br />http://rafael.adm.br
 
-## Based on idea by 37signals.
+Based on idea by 37signals.
 <br />http://37signals.com/svn/archives2/browser_selectors_in_css.php
 
 ## CONTRIBUTORS
-
-[http://rafael.adm.br/css_browser_selector#contributors](http://rafael.adm.br/css_browser_selector#contributors)
+<br />http://rafael.adm.br/css_browser_selector#contributors
 
