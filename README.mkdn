@@ -90,32 +90,29 @@ aspect ratio:
 ## EXAMPLE
 
     <style type="text/css"> 
-    
-    .ie .example { background-color: yellow; }
-    .ie7 .example { background-color: orange }
-    .gecko .example { background-color: gray; }
-    .win.gecko .example { background-color: red; }
-    .linux.gecko .example { background-color: pink; }
-    .opera .example { background-color: green; }
-    .konqueror .example { background-color: blue; }
-    .webkit .example { background-color: black; }
-    .chrome .example { background-color: cyan; }
-    .example { width: 100px; height: 100px; }
-    .no-js, .no_js, .nojs { display: block; }
-    .js { display: none; }
-    
+	    .ie .example { background-color: yellow; }
+	    .ie7 .example { background-color: orange }
+	    .gecko .example { background-color: gray; }
+	    .win.gecko .example { background-color: red; }
+	    .linux.gecko .example { background-color: pink; }
+	    .opera .example { background-color: green; }
+	    .konqueror .example { background-color: blue; }
+	    .webkit .example { background-color: black; }
+	    .chrome .example { background-color: cyan; }
+	    .example { width: 100px; height: 100px; }
+	    .no-js, .no_js, .nojs { display: block; }
+	    .js { display: none; }
     </style>
 
-
-LICENSE
+License:
 <br />http://creativecommons.org/licenses/by/2.5/
 
-ORIGINAL AUTHOR: Rafael Lima
+ORIGINAL AUTHOR: Rafael Lima:
 <br />http://rafael.adm.br
 
-Based on idea by 37signals.
+Based on idea by 37signals:
 <br />http://37signals.com/svn/archives2/browser_selectors_in_css.php
 
-## CONTRIBUTORS
+Contributors:
 <br />http://rafael.adm.br/css_browser_selector#contributors
 
