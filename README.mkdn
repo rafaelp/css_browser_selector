@@ -76,6 +76,17 @@ screen resolutions:
 aspect ratio:
 <br />http://www.htmlgoodies.com/beyond/webmaster/toolbox/article.php/3889591/Detect-and-Set-the-iPhone--iPads-Viewport-Orientation-Using-JavaScript-CSS-and-Meta-Tags.htm
 
+## OTHER VERSIONS
+
+** Ruby on Rails Plugin by Reid MacDonald **
+<br />http://latimes.rubyforge.org/svn/plugins/css_browser_selector/
+
+** PHP CSS Browser Selector by Bastian Allgeier **
+<br />http://bastian-allgeier.de/css_browser_selector/
+
+** Wordpress Plugin by Adrian hanft **
+<br />http://wordpress.org/extend/plugins/browser-specific-css/
+
 
 ## EXAMPLE
 
@@ -98,24 +109,13 @@ aspect ratio:
 
 
 ## LICENSE
+<br />http://creativecommons.org/licenses/by/2.5/
 
-[http://creativecommons.org/licenses/by/2.5/](http://creativecommons.org/licenses/by/2.5/)
+## ORIGINAL AUTHOR: Rafael Lima
+<br />http://rafael.adm.br
 
-## AUTHOR
-
-### **Rafael Lima**
-
-Blog: [http://rafael.adm.br](http://rafael.adm.br)
-
-Podcast: [http://rafael.adm.br/voltandopracasa](http://rafael.adm.br/voltandopracasa)
-
-Github: [http://github.com/rafaelp](http://github.com/rafaelp)
-
-Twitter: [http://twitter.com/rafaelp](http://twitter.com/rafaelp)
-
-### Did you like?
-
-[Recommend me at Working With Rails](http://workingwithrails.com/recommendation/new/person/14248-rafael-lima)
+## Based on idea by 37signals.
+<br />http://37signals.com/svn/archives2/browser_selectors_in_css.php
 
 ## CONTRIBUTORS
 
