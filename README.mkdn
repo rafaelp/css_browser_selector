@@ -78,15 +78,14 @@ aspect ratio:
 
 ## OTHER VERSIONS
 
-#### Ruby on Rails Plugin by Reid MacDonald
-http://latimes.rubyforge.org/svn/plugins/css_browser_selector/
+<b>Ruby on Rails Plugin by Reid MacDonald</b>
+<br />http://latimes.rubyforge.org/svn/plugins/css_browser_selector/
 
-#### PHP CSS Browser Selector by Bastian Allgeier
-http://bastian-allgeier.de/css_browser_selector/
+<b>PHP CSS Browser Selector by Bastian Allgeier</b>
+<br />http://bastian-allgeier.de/css_browser_selector/
 
-#### Wordpress Plugin by Adrian hanft
-http://wordpress.org/extend/plugins/browser-specific-css/
-
+<b>Wordpress Plugin by Adrian hanft</b>
+<br />http://wordpress.org/extend/plugins/browser-specific-css/
 
 ## EXAMPLE
 
