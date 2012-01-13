@@ -38,6 +38,8 @@ v0.6.0 2012-??-??
 <br />altered how 'mobile' is deterimed to be added to the class string
 <br />language detection
 <br />RIM Playbook added
+<br />continuously evaluates browser max width (in case of resizing)
+<br />continuously evaluates browser orientation (portrait vs. landscape)
 
 v0.5.0 2011-08-24
 <br />any version of Firefox
@@ -67,6 +69,12 @@ blackberry user agent string interpertation:
 
 javascript compression:
 <br />http://minifyjavascript.com
+
+screen resolutions:
+<br />http://cartoonized.net/cellphone-screen-resolution.php
+
+aspect ratio:
+<br />http://www.htmlgoodies.com/beyond/webmaster/toolbox/article.php/3889591/Detect-and-Set-the-iPhone--iPads-Viewport-Orientation-Using-JavaScript-CSS-and-Meta-Tags.htm
 
 
 ## EXAMPLE
