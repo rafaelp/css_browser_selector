@@ -19,7 +19,6 @@ function css_browser_selector(u)
 		screens = [320, 480, 640, 768, 1024, 1152, 1280, 1440, 1680, 1920, 2560],
 		allScreens = screens.length,
 		ua=u.toLowerCase(),
-		//is=function(t) { ua.indexOf(t.toLowerCase())>-1 },
 		is=function(t) { return RegExp(t,"i").test(ua);  },
 		g='gecko',
 		w='webkit',
@@ -53,12 +52,14 @@ function css_browser_selector(u)
 					// MIDP and CLDC: 
 					// not sure what these represent but have put in until someone can 
 					// tell me they aren't necessary for the purposes of this plugin
+					/*
 					+ ( /MIDP-((\d+)\.(\d+))/i.test(ua)
 						? " midp"+ RegExp.$2 + " midp"+ RegExp.$1.replace('.','_')
 						:'' )
 					+ ( /CLDC-((\d+)\.(\d+))/i.test(ua)
 						? " cldc"+ RegExp.$2 + " cldc"+ RegExp.$1.replace('.','_')
 						:'' )
+					*/
 				) 
 	
 			:is('android') ? 
