@@ -15,7 +15,7 @@ Identifies
 <br />enabled technology: JS (use in conjunction with &lt;html class="no-js"> for even more granular control)
 <br />language detection
 
-Recent contributors to 0.5, 0.6, 0.6.5:
+Recent contributors to 0.5, 0.6:
 
 more detailed IE detection:
 <br />https://github.com/kevingessner/css_browser_selector/
