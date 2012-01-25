@@ -15,7 +15,7 @@ Identifies
 <br />enabled technology: JS (use in conjunction with &lt;html class="no-js"> for even more granular control)
 <br />language detection
 
-contributors to 0.5, 0.6, 0.6.5:
+contributors to 0.5, 0.6:
 
 more detailed IE detection:
 <br />https://github.com/kevingessner/css_browser_selector/
@@ -31,7 +31,7 @@ mac versioning
 
 andrew relkin
 
-v0.6.0 2012-??-??
+v0.6.0 2012-01-24
 <br />more detailed support for Opera, Chrome, Safari (and revised support for Firefox)
 <br />versioning for Chrome, Blackberry, Android, Mac
 <br />Android device detection
