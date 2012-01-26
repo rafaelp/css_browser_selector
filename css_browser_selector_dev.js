@@ -1,9 +1,8 @@
 /*
-CSS Browser Selector 0.6.5
+CSS Browser Selector 0.6.0
 Originally written by Rafael Lima (http://rafael.adm.br)
 http://rafael.adm.br/css_browser_selector
 License: http://creativecommons.org/licenses/by/2.5/
-Contributors: http://rafael.adm.br/css_browser_selector#contributors
 
 Co-maintained by:
 https://github.com/verbatim/css_browser_selector
@@ -19,7 +18,6 @@ function css_browser_selector(u)
 		screens = [320, 480, 640, 768, 1024, 1152, 1280, 1440, 1680, 1920, 2560],
 		allScreens = screens.length,
 		ua=u.toLowerCase(),
-		//is=function(t) { ua.indexOf(t.toLowerCase())>-1 },
 		is=function(t) { return RegExp(t,"i").test(ua);  },
 		g='gecko',
 		w='webkit',
@@ -32,6 +30,7 @@ function css_browser_selector(u)
 		bb='blackberry',
 		lang='lang_',
 		d='device_',
+		ms='windows',
 		html=document.documentElement,
 		b=	[
 		
@@ -53,12 +52,14 @@ function css_browser_selector(u)
 					// MIDP and CLDC: 
 					// not sure what these represent but have put in until someone can 
 					// tell me they aren't necessary for the purposes of this plugin
+					/*
 					+ ( /MIDP-((\d+)\.(\d+))/i.test(ua)
 						? " midp"+ RegExp.$2 + " midp"+ RegExp.$1.replace('.','_')
 						:'' )
 					+ ( /CLDC-((\d+)\.(\d+))/i.test(ua)
 						? " cldc"+ RegExp.$2 + " cldc"+ RegExp.$1.replace('.','_')
 						:'' )
+					*/
 				) 
 	
 			:is('android') ? 
@@ -94,7 +95,7 @@ function css_browser_selector(u)
 			:''
 			
 			// mobile
-			,is("mobi|mobile|j2me|iphone|ipod|ipad|blackberry|playbook")?m:''
+			,is("mobi|mobile|j2me|iphone|ipod|ipad|blackberry|playbook|kindle|silk")?m:''
 			
 			// os/platform
 			,is('j2me')?'j2me'
@@ -102,6 +103,7 @@ function css_browser_selector(u)
 			:is('ipod')?'ipod'
 			:is('ipad')?'ipad'
 			:is('playbook')?'playbook'
+			:is('kindle|silk')?'kindle'
 			:is('mac')?'mac'+ (/mac os x ((\d+)[.|_](\d+))/.test(ua) ? ' mac' + (RegExp.$1).replace('.',"_") : '' )
 			:is('win')?'win'+
 					(is('windows nt 6.2')?' win8'
