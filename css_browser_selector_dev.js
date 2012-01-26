@@ -3,7 +3,6 @@ CSS Browser Selector 0.6.0
 Originally written by Rafael Lima (http://rafael.adm.br)
 http://rafael.adm.br/css_browser_selector
 License: http://creativecommons.org/licenses/by/2.5/
-Contributors: http://rafael.adm.br/css_browser_selector#contributors
 
 Co-maintained by:
 https://github.com/verbatim/css_browser_selector
@@ -95,7 +94,7 @@ function css_browser_selector(u)
 			:''
 			
 			// mobile
-			,is("mobi|mobile|j2me|iphone|ipod|ipad|blackberry|playbook")?m:''
+			,is("mobi|mobile|j2me|iphone|ipod|ipad|blackberry|playbook|kindle|silk")?m:''
 			
 			// os/platform
 			,is('j2me')?'j2me'
@@ -103,6 +102,7 @@ function css_browser_selector(u)
 			:is('ipod')?'ipod'
 			:is('ipad')?'ipad'
 			:is('playbook')?'playbook'
+			:is('kindle|silk')?'kindle'
 			:is('mac')?'mac'+ (/mac os x ((\d+)[.|_](\d+))/.test(ua) ? ' mac' + (RegExp.$1).replace('.',"_") : '' )
 			:is('win')?'win'+
 					(is('windows nt 6.2')?' win8'
