@@ -29,8 +29,6 @@ no-js to js:
 mac versioning
 <br />https://github.com/haraldmartin/css_browser_selector
 
-andrew relkin
-
 v0.6.0 2012-01-24
 <br />more detailed support for Opera, Chrome, Safari (and revised support for Firefox)
 <br />versioning for Chrome, Blackberry, Android, Mac
