@@ -33,6 +33,7 @@ mac versioning
 =======
 andrew relkin
 
+=======
 >>>>>>> 988b11bc42bfbc77f7e3c9c32b77c768b6183dfe
 v0.6.0 2012-01-24
 <br />more detailed support for Opera, Chrome, Safari (and revised support for Firefox)
