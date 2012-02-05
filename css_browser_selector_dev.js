@@ -140,7 +140,7 @@ function css_browser_selector(u)
 	screenSize();	
 
 	var cssbs = (b.join(' ')).replace(/ +/g," ") + " js ";
-	html.className =   ( cssbs + html.className.replace(/(no[-|_]?)?js/g,"")  ).replace(/^ /, "");
+	html.className =   ( cssbs + html.className.replace(/\b(no[-|_]?)?js\b/g,"")  ).replace(/^ /, "");
 
 	return cssbs;
 	}
