@@ -138,11 +138,7 @@ function css_browser_selector(u)
     window.onresize = screenSize;
 	screenSize();	
 
-<<<<<<< HEAD
 	var cssbs = (b.join(' ')) + " js ";
-=======
-	var cssbs = (b.join(' ')) + "js ";
->>>>>>> \b boundaries removing only js and not when part of another class name
 	html.className =   ( cssbs + html.className.replace(/\b(no[-|_]?)?js\b/g,"")  ).replace(/^ /, "").replace(/ +/g," ");
 
 	return cssbs;
