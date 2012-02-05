@@ -139,7 +139,7 @@ function css_browser_selector(u)
     window.onresize = screenSize;
 	screenSize();	
 
-	var cssbs = (b.join(' ')) + "js ";
+	var cssbs = (b.join(' ')) + " js ";
 	html.className =   ( cssbs + html.className.replace(/\b(no[-|_]?)?js\b/g,"")  ).replace(/^ /, "").replace(/ +/g," ");
 
 	return cssbs;
