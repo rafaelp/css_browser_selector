@@ -103,7 +103,7 @@ function css_browser_selector(u)
 			:is('ipad')?'ipad'
 			:is('playbook')?'playbook'
 			:is('kindle|silk')?'kindle'
-			:is('mac')?'mac'+ (/mac os x ((\d+)[.|_](\d+))/.test(ua) ? ' mac' + (RegExp.$1).replace('.',"_") : '' )
+			:is('mac')?'mac'+ (/mac os x ((\d+)[.|_](\d+))/.test(ua) ?    ( ' mac' + (RegExp.$2)  +  ' mac' + (RegExp.$1).replace('.',"_")  )     : '' )
 			:is('win')?'win'+
 					(is('windows nt 6.2')?' win8'
 					:is('windows nt 6.1')?' win7'
