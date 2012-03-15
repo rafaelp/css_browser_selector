@@ -1,5 +1,5 @@
 /*
-CSS Browser Selector 0.6.0
+CSS Browser Selector 0.6.1
 Originally written by Rafael Lima (http://rafael.adm.br)
 http://rafael.adm.br/css_browser_selector
 License: http://creativecommons.org/licenses/by/2.5/
@@ -19,6 +19,12 @@ function css_browser_selector(u)
 		allScreens = screens.length,
 		ua=u.toLowerCase(),
 		is=function(t) { return RegExp(t,"i").test(ua);  },
+		version = function(p,n) 
+			{ 
+			n=n.replace(".","_"); var i = n.indexOf('_'),  ver=""; 
+			while (i>0) {ver += " "+ p+n.substring(0,i);i = n.indexOf('_', i+1);} 
+			ver += " "+p+n; return ver; 
+			},
 		g='gecko',
 		w='webkit',
 		c='chrome',
@@ -29,8 +35,7 @@ function css_browser_selector(u)
 		a='android',
 		bb='blackberry',
 		lang='lang_',
-		d='device_',
-		ms='windows',
+		dv='device_',
 		html=document.documentElement,
 		b=	[
 		
@@ -49,18 +54,7 @@ function css_browser_selector(u)
 							? ' ' +bb+RegExp.$2 + (RegExp.$3?' ' +bb+RegExp.$2+RegExp.$3:'')
 							: '')
 					)
-					// MIDP and CLDC: 
-					// not sure what these represent but have put in until someone can 
-					// tell me they aren't necessary for the purposes of this plugin
-					/*
-					+ ( /MIDP-((\d+)\.(\d+))/i.test(ua)
-						? " midp"+ RegExp.$2 + " midp"+ RegExp.$1.replace('.','_')
-						:'' )
-					+ ( /CLDC-((\d+)\.(\d+))/i.test(ua)
-						? " cldc"+ RegExp.$2 + " cldc"+ RegExp.$1.replace('.','_')
-						:'' )
-					*/
-				) 
+				) // blackberry
 	
 			:is('android') ? 
 				(  a +
@@ -68,9 +62,9 @@ function css_browser_selector(u)
 						? " " + a+ RegExp.$1 + " "+a+ RegExp.$1+RegExp.$2.replace('.','_')
 						: '')
 					+ (/Android (.+); (.+) Build/i.test(ua)
-						? ' device_'+( (RegExp.$2).replace(/ /g,"_") ).replace(/-/g,"_")
+						? ' '+dv+( (RegExp.$2).replace(/ /g,"_") ).replace(/-/g,"_")
 						:''	)
-				)
+				) //android
 	
 			:is('chrome')?w+   ' '+c+(/chrome\/((\d+)(\.(\d+))(\.\d+)*)/.test(ua)?' '+c+RegExp.$2 +((RegExp.$4>0) ? ' '+c+RegExp.$2+"_"+RegExp.$4:''):'')	
 			
@@ -89,21 +83,28 @@ function css_browser_selector(u)
 								: '' )
 							:'')
 						)
-				)	
+				) //applewebkit	
 		
 			:is('mozilla/')?g
 			:''
 			
 			// mobile
-			,is("mobi|mobile|j2me|iphone|ipod|ipad|blackberry|playbook|kindle|silk")?m:''
+			,is("android|mobi|mobile|j2me|iphone|ipod|ipad|blackberry|playbook|kindle|silk")?m:''
 			
 			// os/platform
 			,is('j2me')?'j2me'
-			:is('iphone')?'iphone'
-			:is('ipod')?'ipod'
-			:is('ipad')?'ipad'
+			:is('ipad|ipod|iphone')?  
+				( 
+					(
+						/CPU( iPhone)? OS (\d+[_|\.]\d+([_|\.]\d+)*)/i.test(ua)  ?
+						'ios' + version('ios',RegExp.$2) : ''
+					) + ' ' + ( /(ip(ad|od|hone))/gi.test(ua) ?	RegExp.$1 : "" )
+				) //'iphone'
+			//:is('ipod')?'ipod'
+			//:is('ipad')?'ipad'
 			:is('playbook')?'playbook'
 			:is('kindle|silk')?'kindle'
+			:is('playbook')?'playbook'
 			:is('mac')?'mac'+ (/mac os x ((\d+)[.|_](\d+))/.test(ua) ?    ( ' mac' + (RegExp.$2)  +  ' mac' + (RegExp.$1).replace('.',"_")  )     : '' )
 			:is('win')?'win'+
 					(is('windows nt 6.2')?' win8'
@@ -120,6 +121,11 @@ function css_browser_selector(u)
 			
 			// user agent language
 			,(/[; |\[](([a-z]{2})(\-[a-z]{2})?)[)|;|\]]/i.test(ua))?(lang+RegExp.$2).replace("-","_")+(RegExp.$3!=''?(' '+lang+RegExp.$1).replace("-","_"):''):''
+		
+			// beta: test if running iPad app
+			,( is('ipad|iphone|ipod') && !is('safari') )  ?  'ipad_app'  : ''
+		
+		
 		]; // b
 
     function screenSize() 
@@ -129,7 +135,7 @@ function css_browser_selector(u)
 		uaInfo.orientation = ((w<h) ? "portrait" : "landscape");
         // remove previous min-width, max-width, client-width, client-height, and orientation
         html.className = html.className.replace(/ ?orientation_\w+/g, "").replace(/ [min|max|cl]+[w|h]_\d+/g, "")
-        for (ww=(allScreens-1);ww>=0;ww--) { if (w >= screens[ww] ) { uaInfo.maxw = screens[ww]; break; }}
+        for (var i=(allScreens-1);i>=0;i--) { if (w >= screens[i] ) { uaInfo.maxw = screens[i]; break; }}
 		widthClasses="";
         for (var info in uaInfo) { widthClasses+=" "+info+"_"+ uaInfo[info]  };
 		html.className =  ( html.className +widthClasses  );
