@@ -114,7 +114,8 @@ function css_browser_selector(u)
 					:is('windows nt 5.0')?' win_2k'
 					:is('windows nt 4.0') || is('WinNT4.0') ?' win_nt'
 					: ''
-					) 
+					) +
+					((is('windows nt [45]') || is('WinNT4.0')) ? ' win_xp_2k_nt' : ' win_vista_plus')
 			:is('freebsd')?'freebsd'
 			:(is('x11|linux'))?'linux'
 			:''
