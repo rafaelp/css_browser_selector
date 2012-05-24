@@ -1,0 +1,24 @@
+	body { margin:0px; padding:10px; font-size:12px;font-family:Arial,Helvetica,sans-serif; }
+	h1, h2, h3, h4, h5, h6 { padding:0px; margin:0px; }
+	h1 { font-size:16px; font-weight:bold;  }
+	h2 { font-size:14px; font-weight:bold; }
+	h3 { font-size:12px; }
+	.header h3 { font-size:18px; margin-top:12px; }
+	.pass { color:#090; background-color:#CFC; }
+	.fail { color:#900; background-color:#FCC; }
+	.partial, .generated_classes { color:#009; background-color:#CCF; }
+	.fail, .result, .partial {  -webkit-border-radius:8px; -moz-border-radius:8px;  border-radius:8px; }
+	.failed, .generated_classes { -webkit-border-radius:0px 0px 8px 8px; -moz-border-radius:0px 0px 8px 8px;  border-radius:0px 0px 8px 8px; }
+	.full_test .generated_classes { border-radius:0px; }
+	.result, #results { margin-top:10px;  }
+	.expected, .got { }
+	.odd {  }
+	pre { font-family:"Courier New",monospace;font-size:11px; }
+	#container { width:800px; margin:0px auto; }
+	#results { border-top:1px solid #CCC;  }
+	.passed, .fail, .result, .user_agent, .generated_classes { padding:8px; }		
+	.user_agent {color:#333; background-color:#FF9; -webkit-border-radius:8px 8px 0px 0px; -moz-border-radius:8px 8px 0px 0px;  border-radius:8px 8px 0px 0px; }
+
+	
+
+

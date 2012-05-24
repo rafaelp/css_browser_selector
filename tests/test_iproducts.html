@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html id="css_browser_selector" class="no-js">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>CSS Browser Selector Tester: iProducts</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script src="jquery164.js" type="text/javascript"></script>
+<script src="../css_browser_selector_dev.js" type="text/javascript"></script>
+<script src="generator.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+var user_agent_strings = [ 
+
+
+	["ipad 5.1","header"],
+
+	["Mozilla/5.0 (iPad; CPU OS 5_0 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A334 Safari/7534.48.3","webkit safari safari5 safari5_1 mobile ipad js"],
+	["Mozilla/5.0 (iPad; U; CPU OS 4_3_5 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8L1 Safari/6533.18.5","webkit safari safari5 safari5_0 mobile ipad lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPad; U; CPU OS 4_3_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8G4 Safari/6533.18.5","webkit safari safari5 safari5_0 mobile ipad lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPad; U; CPU OS 4_3 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8F191 Safari/6533.18.5","webkit safari safari5 safari5_0 mobile ipad lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPad; U; CPU OS 4_3 like Mac OS X; de-de) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8F191 Safari/6533.18.5","webkit safari safari5 safari5_0 mobile ipad lang_de lang_de_de js"],
+	["Mozilla/5.0 (iPad; U; CPU OS 4_3 like Mac OS X; da-dk) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8F190 Safari/6533.18.5","webkit safari safari5 safari5_0 mobile ipad lang_da lang_da_dk js"],
+	["Mozilla/5.0 (iPad; U; CPU OS 4_3 like Mac OS X; en-gb) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8F190 Safari/6533.18.5","webkit safari safari5 safari5_0 mobile ipad lang_en lang_en_gb js"],
+	["Mozilla/5.0 (iPad; U; CPU OS 4_3 like Mac OS X; fr-fr) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8F190 Safari/6533.18.5","webkit safari safari5 safari5_0 mobile ipad lang_fr lang_fr_fr js"],
+	["Mozilla/5.0 (iPad; U; CPU OS 4_3 like Mac OS X; nl-nl) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8F190 Safari/6533.18.5","webkit safari safari5 safari5_0 mobile ipad lang_nl lang_nl_nl js"],
+	["Mozilla/5.0 (iPad; U; CPU OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5","webkit safari safari5 safari5_0 mobile ipad lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPad; U; CPU OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.1","webkit safari safari5 safari5_0 mobile ipad lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPad; U; CPU OS 4_2_1 like Mac OS X; ja-jp) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5","webkit safari safari5 safari5_0 mobile ipad lang_ja lang_ja_jp js"],
+	["Mozilla/5.0 (iPad; U; CPU OS 4_2_1 like Mac OS X; ko-kr) AppleWebKit/533.17.9 (KHTML, like Gecko) Mobile/8C148","webkit safari mobile ipad lang_ko lang_ko_kr js"],
+	["Mozilla/5.0 (iPad; U; CPU OS 4_2_1 like Mac OS X; ru-ru) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5","webkit safari safari5 safari5_0 mobile ipad lang_ru lang_ru_ru js"],
+
+	["ipad 4.0.4","header"],
+
+	["Mozilla/5.0 (iPad; U; CPU OS 3_2_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B500","webkit safari mobile ipad lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPad; U; CPU OS 3_2_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B500 Safari/53","webkit safari safari4 safari4_0 mobile ipad lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPad; U; CPU OS 3_2_2 like Mac OS X; zh-cn) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B500","webkit safari mobile ipad lang_zh lang_zh_cn js"],
+	["Mozilla/5.0 (iPad;U;CPU OS 3_2_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B500 Safari/531.21.10","webkit safari safari4 safari4_0 mobile ipad lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B405 Safari/531.21.10","webkit safari safari4 safari4_0 mobile ipad lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405","webkit safari mobile ipad lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPad; U; CPU OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B334b Safari/531.21.10","webkit safari safari4 safari4_0 mobile ipad lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPad; U; CPU OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B367 Safari/531.21.10","webkit safari safari4 safari4_0 mobile ipad lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPad; U; CPU OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B334b Safari/531.21.1021.10gin_lib.cc","webkit safari safari4 safari4_0 mobile ipad lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPad; U; CPU OS 3_2 like Mac OS X; es-es) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B360 Safari/531.21.10","webkit safari safari4 safari4_0 mobile ipad lang_es lang_es_es js"],
+	["Mozilla/5.0 (iPad; U; CPU OS 3_2 like Mac OS X; es-es) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B367 Safari/531.21.10","webkit safari safari4 safari4_0 mobile ipad lang_es lang_es_es js"],
+
+	["ipod 5.0.2","header"],
+
+	["Mozilla/5.0 (iPod; U; CPU iPhone OS 4_2_1 like Mac OS X; he-il) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5","webkit safari safari5 safari5_0 mobile iphone lang_he lang_he_il js"],
+	["Mozilla/5.0 (iPod; U; CPU iPhone OS 4_3_1 like Mac OS X; zh-cn) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8G4 Safari/6533.18.5","webkit safari safari5 safari5_0 mobile iphone lang_zh lang_zh_cn js"],
+	["Mozilla/5.0 (iPod; U; CPU iPhone OS 4_3_3 like Mac OS X; ja-jp) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5","webkit safari safari5 safari5_0 mobile iphone lang_ja lang_ja_jp js"],
+
+	["ipod 4.0","header"],
+
+	["Mozilla/5.0 (iPod; U; CPU iPhone OS 3_0 like Mac OS X; de-de) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7A341 Safari/528.16","webkit safari safari4 safari4_0 mobile iphone lang_de lang_de_de js"],
+	["Mozilla/5.0 (iPod; U; CPU iPhone OS 3_0 like Mac OS X; ja-jp) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7A341 Safari/528.16","webkit safari safari4 safari4_0 mobile iphone lang_ja lang_ja_jp js"],
+
+	["ipod 3.1.1.","header"],
+
+	["Mozilla/5.0 (iPod; U; CPU iPhone OS 2_1_1 like Mac OS X; ja-jp) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5F138 Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_ja lang_ja_jp js"],
+	["Mozilla/5.0 (iPod; U; CPU iPhone OS 2_2_1 like Mac OS X; de-de) AppleWebKit/525.18.1 (KHTML, like Gecko) Mobile/5H11a","webkit safari mobile iphone lang_de lang_de_de js"],
+	["Mozilla/5.0 (iPod; U; CPU iPhone OS 2_2_1 like Mac OS X; de-de) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5H11 Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_de lang_de_de js"],
+	["Mozilla/5.0 (iPod; U; CPU iPhone OS 2_2_1 like Mac OS X; de-de) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5H11a Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_de lang_de_de js"],
+	["Mozilla/5.0 (iPod; U; CPU iPhone OS 2_2_1 like Mac OS X; en-au) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5H11a Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_en lang_en_au js"],
+	["Mozilla/5.0 (iPod; U; CPU iPhone OS 2_2_1 like Mac OS X; en-us) AppleWebKit/525.18.1 (KHTML, like Gecko) Mobile/5H11","webkit safari mobile iphone lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPod; U; CPU iPhone OS 2_2_1 like Mac OS X; en-us) AppleWebKit/525.18.1 (KHTML, like Gecko) Mobile/5H11a","webkit safari mobile iphone lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPod; U; CPU iPhone OS 2_2_1 like Mac OS X; en-us) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5H11 Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPod; U; CPU iPhone OS 2_2_1 like Mac OS X; en-us) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5H11a Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPod; U; CPU iPhone OS 2_2_1 like Mac OS X; en-us) AppleWebKit/525.18.1 (KHTML, like Gecko)","webkit safari mobile iphone lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPod; U; CPU iPhone OS 2_2_1 like Mac OS X; es-es) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5H11a Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_es lang_es_es js"],
+	["Mozilla/5.0 (iPod; U; CPU iPhone OS 2_2_1 like Mac OS X; fr-fr) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5H11 Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_fr lang_fr_fr js"],
+	["Mozilla/5.0 (iPod; U; CPU iPhone OS 2_2_1 like Mac OS X; fr-fr) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5H11a Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_fr lang_fr_fr js"],
+	["Mozilla/5.0 (iPod; U; CPU iPhone OS 2_2_1 like Mac OS X; ko-kr) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5H11 Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_ko lang_ko_kr js"],
+	["Mozilla/5.0 (iPod; U; CPU iPhone OS 2_2_1 like Mac OS X; ko-kr) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5H11a Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_ko lang_ko_kr js"],
+	["Mozilla/5.0 (iPod; U; CPU iPhone OS 2_2_1 like Mac OS X; pl-pl) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5H11 Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_pl lang_pl_pl js"],
+	["Mozilla/5.0 (iPod; U; CPU iPhone OS 2_2_1 like Mac OS X; sv-se) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5H11 Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_sv lang_sv_se js"],
+	["Mozilla/5.0 (iPod; U; CPU iPhone OS 2_2 like Mac OS X; de-de) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5G77 Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_de lang_de_de js"],
+	["Mozilla/5.0 (iPod; U; CPU iPhone OS 2_2 like Mac OS X; de-de) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5G77a Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_de lang_de_de js"],
+	["Mozilla/5.0 (iPod; U; CPU iPhone OS 2_2 like Mac OS X; fr-fr) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5G77a Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_fr lang_fr_fr js"],
+	["Mozilla/5.0 (iPod; U; CPU iPhone OS 2_2 like Mac OS X; it-it) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5G77 Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_it lang_it_it js"],
+	["Mozilla/5.0 (iPod; U; CPU iPhone OS 2_2 like Mac OS X; ja-jp) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5G77a Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_ja lang_ja_jp js"],
+	["Mozilla/5.0 (iPod; U; CPU iPhone OS 2_2 like Mac OS X; ko-kr) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5G77 Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_ko lang_ko_kr js"],
+	["Mozilla/5.0 (iPod; U; CPU iPhone OS 2_2 like Mac OS X; ko-kr) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5G77a Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_ko lang_ko_kr js"],
+	["Mozila/5.0 (iPod; U; CPU like Mac OS X; en) AppleWebKit/420.1 (KHTML, like Geckto) Version/3.0 Mobile/3A101a Safari/419.3","webkit safari safari3 safari3_0 mobile ipod lang_en js"],
+
+	["iphone 5.1","header"],
+
+	["Mozilla/5.0 (iPhone; CPU iPhone OS 5_0 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A334 Safari/7534.48.3","webkit safari safari5 safari5_1 mobile iphone js"],
+
+	["iphone 5.0.X","header"],
+
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3_1 like Mac OS X; zh-tw) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8G4 Safari/6533.18.5","webkit safari safari5 safari5_0 mobile iphone lang_zh lang_zh_tw js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3 like Mac OS X; pl-pl) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8F190 Safari/6533.18.5","webkit safari safari5 safari5_0 mobile iphone lang_pl lang_pl_pl js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3 like Mac OS X; fr-fr) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8F190 Safari/6533.18.5","webkit safari safari5 safari5_0 mobile iphone lang_fr lang_fr_fr js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3 like Mac OS X; en-gb) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8F190 Safari/6533.18.5","webkit safari safari5 safari5_0 mobile iphone lang_en lang_en_gb js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148a Safari/6533.18.5","webkit safari safari5 safari5_0 mobile iphone js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; ru-ru) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5","webkit safari safari5 safari5_0 mobile iphone lang_ru lang_ru_ru js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; nb-no) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148a Safari/6533.18.5","webkit safari safari5 safari5_0 mobile iphone lang_nb lang_nb_no js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; it-it) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148a Safari/6533.18.5","webkit safari safari5 safari5_0 mobile iphone lang_it lang_it_it js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; fr) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148a Safari/6533.18.5","webkit safari safari5 safari5_0 mobile iphone lang_fr js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; fi-fi) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148a Safari/6533.18.5","webkit safari safari5 safari5_0 mobile iphone lang_fi lang_fi_fi js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; fi-fi) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5","webkit safari safari5 safari5_0 mobile iphone lang_fi lang_fi_fi js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; de-de) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5","webkit safari safari5 safari5_0 mobile iphone lang_de lang_de_de js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; da-dk) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5","webkit safari safari5 safari5_0 mobile iphone lang_da lang_da_dk js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 1_2_3 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5","webkit safari safari5 safari5_0 mobile iphone lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPhone; U; fr; CPU iPhone OS 4_2_1 like Mac OS X; fr) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148a Safari/6533.18.5","webkit safari safari5 safari5_0 mobile iphone lang_fr js"],
+
+	["iphone 4.0.X","header"],
+
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_1 like Mac OS X; en-us) AppleWebKit/532.9 (KHTML, like Gecko) Version/4.0.5 Mobile/8B5097d Safari/6531.22.7","webkit safari safari4 safari4_0 mobile iphone lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_1 like Mac OS X; en-us) AppleWebKit/532.9 (KHTML, like Gecko) Version/4.0.5 Mobile/8B117 Safari/6531.22.7","webkit safari safari4 safari4_0 mobile iphone lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPhone; U; CPU OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B334b Safari/531.21.10","webkit safari safari4 safari4_0 mobile iphone lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; fr-fr) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/8C148a Safari/528.16","webkit safari safari4 safari4_0 mobile iphone lang_fr lang_fr_fr js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_1_1 like Mac OS X; en-en) AppleWebKit/548.18 (KHTML, like Gecko) Version/4.0 Mobile/8F12 Safari/548.16","webkit safari safari4 safari4_0 mobile iphone lang_en lang_en_en js"],
+	["Mozilla/5.0 (iPhone; CPU iPhone OS 3_0 like Mac OS X; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1","webkit safari safari4 safari4_0 mobile iphone lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPhone; CPU iPhone OS 3_0 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7A341 Safari/528.16","webkit safari safari4 safari4_0 mobile iphone lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPhone Simulator; U; CPU iPhone OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7D11 Safari/531.21.10","webkit safari safari4 safari4_0 mobile iphone lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_1 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7C97d Safari/528.16","webkit safari safari4 safari4_0 mobile iphone lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_0 like Mac OS X; ko-kr) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7A341 Safari/528.16","webkit safari safari4 safari4_0 mobile iphone lang_ko lang_ko_kr js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_1_2 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7D11 Safari/528.16","webkit safari safari4 safari4_0 mobile iphone lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_0 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7A341 Safari/528.16","webkit safari safari4 safari4_0 mobile iphone lang_en lang_en_us js"],
+
+	["iphone 3.1.X","header"],
+
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_0 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/3.1.1 Mobile/7A280f Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_0 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/3.1.1 Mobile/7A259g Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_0 like Mac OS X; en-us) AppleWebKit/528.11 (KHTML, like Gecko) Version/3.1.1 Mobile/7A238k Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_0 like Mac OS X; en-us) AppleWebKit/528.11 (KHTML, like Gecko) Version/3.1.1 Mobile/7A238j Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_0 like Mac OS X; en-us) AppleWebKit/528.1 (KHTML, like Gecko) Version/3.1.1 Mobile/7A205d Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_2_1 like Mac OS X; zh-tw) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5H11 Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_zh lang_zh_tw js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_2_1 like Mac OS X; zh-tw) AppleWebKit/525.18.1 (KHTML, like Gecko) Mobile/5H11","webkit safari mobile iphone lang_zh lang_zh_tw js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_2_1 like Mac OS X; sv-se) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5H11 Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_sv lang_sv_se js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_2_1 like Mac OS X; ru-ru) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5H11 Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_ru lang_ru_ru js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_2_1 like Mac OS X; pt-br) AppleWebKit/525.18.1 (KHTML, like Gecko)","webkit safari mobile iphone lang_pt lang_pt_br js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_2_1 like Mac OS X; nb-no) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5H11 Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_nb lang_nb_no js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_2_1 like Mac OS X; ja-jp) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5H11 Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_ja lang_ja_jp js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_2_1 like Mac OS X; fr-fr) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1","webkit safari safari3 safari3_1 mobile iphone lang_fr lang_fr_fr js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_2_1 like Mac OS X; fr-fr) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5H11","webkit safari safari3 safari3_1 mobile iphone lang_fr lang_fr_fr js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_2_1 like Mac OS X; fr-fr) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5H11 Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_fr lang_fr_fr js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_2_1 like Mac OS X; fr-fr) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5F136 Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_fr lang_fr_fr js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_2_1 like Mac OS X; fr-fr) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5B108","webkit safari safari3 safari3_1 mobile iphone lang_fr lang_fr_fr js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_2_1 like Mac OS X; fr-fr) AppleWebKit/525.18.1 (KHTML, like Gecko) Mobile/5H11","webkit safari mobile iphone lang_fr lang_fr_fr js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_2_1 like Mac OS X; en-us) AppleWebKit/525.18.1 (KHTML, like Gecko)","webkit safari mobile iphone lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_2_1 like Mac OS X; en-us) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5H11a Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_2_1 like Mac OS X; en-us) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5H11 Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_2_1 like Mac OS X; en-us) AppleWebKit/525.18.1 (KHTML, like Gecko) Mobile/5H11","webkit safari mobile iphone lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_2_1 like Mac OS X; en-gb) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5H11 Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_en lang_en_gb js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_2_1 like Mac OS X; de-de) AppleWebKit/525.18.1 (KHTML, like Gecko)","webkit safari mobile iphone lang_de lang_de_de js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_2_1 like Mac OS X; de-de) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5H11 Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_de lang_de_de js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_2 like Mac X; en-us) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5F136 Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_2 like Mac OX;fr-fr) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5G77 Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_ox js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_2 like Mac OS X;fr-fr) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5G77 Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_fr lang_fr_fr js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_2 like Mac OS X; fr-fr) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1","webkit safari safari3 safari3_1 mobile iphone lang_fr lang_fr_fr js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_2 like Mac OS X; fr-fr) AppleWebKit/525.18.1 (KHTML, like Gecko) Mobile/5G77","webkit safari mobile iphone lang_fr lang_fr_fr js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_2 like Mac OS X; de-de) AppleWebKit/525.18.1 (KHTML, like Gecko) Mobile/5G77","webkit safari mobile iphone lang_de lang_de_de js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_1 like Mac OS X;en-us) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5F136 Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_1 like Mac OS X; zh-tw) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5F136 Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_zh lang_zh_tw js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_1 like Mac OS X; zh-cn) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5F136 Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_zh lang_zh_cn js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_1 like Mac OS X; it-it) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5F136 Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_it lang_it_it js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_1 like Mac OS X; fr-fr) AppleWebKit/525.18.1 (KHTML, like Gecko) Mobile/5F136","webkit safari mobile iphone lang_fr lang_fr_fr js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_0_2 like Mac OS X; nl-nl) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5C1 Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_nl lang_nl_nl js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_0_1 like Mac OS X; fr-fr) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5G77 Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_fr lang_fr_fr js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_0_1 like Mac OS X; en) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5B108 Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_en js"],
+	["Mozilla/5.0 (iPhone; U; CPU comme Mac OS X; en) AppleWebKit/420 + (KHTML, comme Gecko) Version/3.0 Mobile/1A543 Safari/419.3","webkit safari safari3 safari3_0 mobile iphone lang_en js"],
+	["Mozilla/5.0 (iPhone Simulator; U; CPU iPhone OS 3_0 like Mac OS X; en-us) AppleWebKit/528.11 (KHTML, like Gecko) Version/3.1.1 Mobile/7A238j Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPhone Simulator; U; CPU iPhone OS 2_2_1 like Mac OS X; en-us) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5H11 Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPhone Simulator; U; CPU iPhone OS 2_2_1 like Mac OS X; en-us) AppleWebKit/525.18.1 (KHTML, like Gecko) Mobile/5H11","webkit safari mobile iphone lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPhone Simulator; U; CPU iPhone OS 2_1 like Mac OS X; en-us) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5F135 Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPhone Simulator; U; CPU iPhone OS 2_0 like Mac OS X; fr-fr) AppleWebKit/525.18.1 (KHTML, like Gecko)","webkit safari mobile iphone lang_fr lang_fr_fr js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS2_2 like Mac OS X;fr-fr) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5G77 Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_fr lang_fr_fr js"],
+
+	["iphone 3.0","header"],
+
+	["Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en) AppleWebKit/420+ (KHTML, like Gecko) Version/3.0 Mobile/1A543a Safari/419.3","webkit safari safari3 safari3_0 mobile iphone lang_en js"],
+	["Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en) AppleWebKit/420+ (KHTML, like Gecko) Version/3.0 Mobile/1C25 Safari/419.3","webkit safari safari3 safari3_0 mobile iphone lang_en js"],
+	["Mozilla/5.0 (iPhone; U; CPU like Mac OS X; zh-tw) AppleWebKit/420+ (KHTML, like Gecko) Version/3.0 Mobile/1C28 Safari/419.3","webkit safari safari3 safari3_0 mobile iphone lang_zh lang_zh_tw js"],
+	["Mozilla/5.0 (iPhone; U; CPU like Mac OS X; sv-se) AppleWebKit/420.1 (KHTML, like Gecko) Version/3.0 Mobile/3A109a Safari/419.3","webkit safari safari3 safari3_0 mobile iphone lang_sv lang_sv_se js"],
+	["Mozilla/5.0 (iPhone; U; CPU like Mac OS X; nl-nl) AppleWebKit/420.1 (KHTML, like Gecko) Version/3.0 Mobile/3A109a Safari/419.3","webkit safari safari3 safari3_0 mobile iphone lang_nl lang_nl_nl js"],
+	["Mozilla/5.0 (iPhone; U; CPU like Mac OS X; fr) AppleWebKit/420+ (KHTML, like Gecko) Version/3.0 Mobile/1A543 Safari/419.3","webkit safari safari3 safari3_0 mobile iphone lang_fr js"],
+	["Mozilla/5.0 (iPhone; U; CPU like Mac OS X; es) AppleWebKit/420.1 (KHTML, like Gecko) Version/3.0 Mobile/3A109a Safari/419.3","webkit safari safari3 safari3_0 mobile iphone lang_es js"],
+	["Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en) AppleWebKit/420+ (KHTML, like Gecko) Version/3.0 Mobile/1A543 Safari/419.3 ( .NET CLR 3.5.30729)","webkit safari safari3 safari3_0 mobile iphone lang_en js"],
+	["Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en) AppleWebKit/420+ (KHTML, like Gecko) Version/3.0 Mobile/1A538a Safari/419.3 FirePHP/0.3","webkit safari safari3 safari3_0 mobile iphone lang_en js"],
+	["Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en) AppleWebKit/420.1 (KHTML, like Gecko) Version/3.0 Mobile/4A102 Safari/419.3","webkit safari safari3 safari3_0 mobile iphone lang_en js"],
+	["Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en) AppleWebKit/420.1 (KHTML, like Gecko) Version/3.0 Mobile/3B48b Safari/419.3","webkit safari safari3 safari3_0 mobile iphone lang_en js"],
+	["Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en) AppleWebKit/420 (KHTML, like Gecko) Version/3.0 Mobile/1C28 Safari/419.3","webkit safari safari3 safari3_0 mobile iphone lang_en js"],
+	["Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en) AppleWebKit/420 (KHTML, like Gecko) Version/3.0 Mobile/1A543a Safari/419.3","webkit safari safari3 safari3_0 mobile iphone lang_en js"],
+
+	["iphone ????","header"],
+
+	["Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_5_2; en-gb) AppleWebKit/526+ (KHTML, like Gecko) Version/3.1 iPhone","webkit safari safari3 safari3_1 mobile iphone lang_en lang_en_gb js"],
+	["Mozilla/5.0 (Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_0_1 like Mac OS X; fr-fr) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5G77 Safari/525.20","webkit safari safari3 safari3_1 mobile iphone lang_fr lang_fr_fr js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.20 (KHTML, like Gecko) Mobile/7B298g","webkit safari mobile iphone lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_0 like Mac OS X; zh-tw) AppleWebKit/532.9 (KHTML, like Gecko)","webkit safari mobile iphone lang_zh lang_zh_tw js"],
+	["Mozilla/5.0 (iPad; U; CPU iPhone OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B314 Safari/531.21.10","webkit safari safari4 safari4_0 mobile iphone lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPad; U; CPU iPhone OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B314 Safari/123","webkit safari safari4 safari4_0 mobile iphone lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPad; U; CPU iPhone OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B314 Safari/531.21.10gin_lib.cc","webkit safari safari4 safari4_0 mobile iphone lang_en lang_en_us js"],
+	["Mozilla/5.0 (iPad; U; CPU iPhone OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B314","webkit safari safari4 safari4_0 mobile iphone lang_en lang_en_us js"]
+	
+];
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+

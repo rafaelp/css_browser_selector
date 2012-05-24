@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html id="css_browser_selector" class="no-js">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>CSS Browser Selector Tester: ANDROID</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script src="jquery164.js" type="text/javascript"></script>
+<script src="../css_browser_selector_dev.js" type="text/javascript"></script>
+<script src="generator.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+var user_agent_strings = [ 
+
+	["Mozilla/5.0 (Linux; U; Android 2.3; en-us) AppleWebKit/999+ (KHTML, like Gecko) Safari/999.9","android linux lang_en lang_en_us js"],
+	["Mozilla/5.0 (Linux; U; Android 2.3.5; en-us; HTC Vision Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1","android android4 android4_0 device_htc_vision mobile linux lang_en lang_en_us js"],
+	["Mozilla/5.0 (Linux; U; Android 2.3.4; fr-fr; HTC Desire Build/GRJ22) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1","android android4 android4_0 device_htc_desire mobile linux lang_fr lang_fr_fr js"],
+	["Mozilla/5.0 (Linux; U; Android 2.3.4; en-us; T-Mobile myTouch 3G Slide Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1","android android4 android4_0 device_t_mobile_mytouch_3g_slide mobile linux lang_en lang_en_us js"],
+	["Mozilla/5.0 (Linux; U; Android 2.3.3; zh-tw; HTC_Pyramid Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1","android android4 android4_0 device_htc_pyramid mobile linux lang_zh lang_zh_tw js"],
+	["Mozilla/5.0 (Linux; U; Android 2.3.3; zh-tw; HTC_Pyramid Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari","android android4 android4_0 device_htc_pyramid mobile linux lang_zh lang_zh_tw js"],
+	["Mozilla/5.0 (Linux; U; Android 2.3.3; zh-tw; HTC Pyramid Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1","android android4 android4_0 device_htc_pyramid mobile linux lang_zh lang_zh_tw js"],
+	["Mozilla/5.0 (Linux; U; Android 2.3.3; ko-kr; LG-LU3000 Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1","android android4 android4_0 device_lg_lu3000 mobile linux lang_ko lang_ko_kr js"],
+	["Mozilla/5.0 (Linux; U; Android 2.3.3; en-us; HTC_DesireS_S510e Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1","android android4 android4_0 device_htc_desires_s510e mobile linux lang_en lang_en_us js"],
+	["Mozilla/5.0 (Linux; U; Android 2.3.3; en-us; HTC_DesireS_S510e Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile","android android4 android4_0 device_htc_desires_s510e mobile linux lang_en lang_en_us js"],
+	["Mozilla/5.0 (Linux; U; Android 2.3.3; de-de; HTC Desire Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1","android android4 android4_0 device_htc_desire mobile linux lang_de lang_de_de js"],
+	["Mozilla/5.0 (Linux; U; Android 2.3.3; de-ch; HTC Desire Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1","android android4 android4_0 device_htc_desire mobile linux lang_de lang_de_ch js"],
+	["Mozilla/5.0 (Linux; U; Android 2.2; fr-lu; HTC Legend Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1","android android4 android4_0 device_htc_legend mobile linux lang_fr lang_fr_lu js"],
+	["Mozilla/5.0 (Linux; U; Android 2.2; en-sa; HTC_DesireHD_A9191 Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1","android android4 android4_0 device_htc_desirehd_a9191 mobile linux lang_en lang_en_sa js"],
+	["Mozilla/5.0 (Linux; U; Android 2.2.1; fr-fr; HTC_DesireZ_A7272 Build/FRG83D) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1","android android4 android4_0 device_htc_desirez_a7272 mobile linux lang_fr lang_fr_fr js"],
+	["Mozilla/5.0 (Linux; U; Android 2.2.1; en-gb; HTC_DesireZ_A7272 Build/FRG83D) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1","android android4 android4_0 device_htc_desirez_a7272 mobile linux lang_en lang_en_gb js"],
+	["Mozilla/5.0 (Linux; U; Android 2.2.1; en-ca; LG-P505R Build/FRG83) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1","android android4 android4_0 device_lg_p505r mobile linux lang_en lang_en_ca js"],
+	["Mozilla/5.0 (Linux; U; Android 2.2.1; de-de; HTC_Wildfire_A3333 Build/FRG83D) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1","android android4 android4_0 device_htc_wildfire_a3333 mobile linux lang_de lang_de_de js"],
+	["Mozilla/5.0 (Linux; U; Android 1.6; ar-us; SonyEricssonX10i Build/R2BA026) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1","android android3 android3_2 device_sonyericssonx10i mobile linux lang_ar lang_ar_us js"]	
+
+];
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
+
