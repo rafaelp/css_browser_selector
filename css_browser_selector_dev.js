@@ -1,5 +1,5 @@
 /*
-CSS Browser Selector 0.6.1
+CSS Browser Selector 0.6.2
 Originally written by Rafael Lima (http://rafael.adm.br)
 http://rafael.adm.br/css_browser_selector
 License: http://creativecommons.org/licenses/by/2.5/
@@ -144,6 +144,17 @@ function css_browser_selector(u)
 	
     window.onresize = screenSize;
 	screenSize();	
+
+    function retina(){
+      var r = window.devicePixelRatio > 1;
+      if (r) {      	
+        html.className+=' retina';
+      }
+      else {
+        html.className+=' non-retina';
+      }
+    }
+    retina();
 
 	var cssbs = (b.join(' ')) + " js ";
 	html.className =   ( cssbs + html.className.replace(/\b(no[-|_]?)?js\b/g,"")  ).replace(/^ /, "").replace(/ +/g," ");
