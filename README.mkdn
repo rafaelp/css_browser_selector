@@ -1,8 +1,8 @@
 # CSS Browser Selector
 
-2014-02-19
+<b>2014-02-19
 <br>I have not had time to work on this in a long time. Is there anyone interested in taking over? Maybe you can take this project to the next level.
-
+</b>
 
 CSS Browser Selector is a very small javascript which empowers CSS selectors.
 <br />You can now write code for: browser, browser version, platform, platform version, device, device version.
