@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Browser Selector - Example</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <style type="text/css">
+            .ie .example {
+                background-color: yellow
+            }
+            .ie7 .example {
+                background-color: orange
+            }
+            .gecko .example {
+                background-color: gray
+            }
+            .win.gecko .example {
+                background-color: red
+            }
+            .linux.gecko .example {
+                background-color: pink
+            }
+            .opera .example {
+                background-color: green
+            }
+            .konqueror .example {
+                background-color: blue
+            }
+            .webkit .example {
+                background-color: black
+            }
+            .example {
+                width: 100px;
+                height: 100px;
+            }
+            .no_js { display: block }
+            .has_js { display: none }
+            .js .no_js { display: none }
+            .js .has_js { display: block }
+        </style>
+        <script type="text/javascript" src="jquery-1.2.6.min.js"></script>
+        <script type="text/javascript" src="../css_browser_selector.js"></script>
+    </head>
+    <body>
+        <h1>CSS Browser Selector - Example</h1>
+        <div class="no_js" style="color: red; font-weight: bold">
+            <p>The JavaScript support is disabled on your browser. Please, enable JavaScript and refresh this page.</p>
+        </div>
+        <div class="has_js">
+            <div class="example"></div>
+	
+            <p>The color of this box will change on different os/browsers:</p>
+            <ul>
+                <li>Internet Explorer - yellow</li>
+                <li>Internet Explorer 7 - orange</li>
+                <li>Gecko Engine on Windows (Firefox, Mozilla, Camino) - red</li>
+                <li>Gecko Engine on Linux (Firefox, Mozilla, Camino) - pink</li>
+                <li>Gecko Engine on Other OS (Firefox, Mozilla, Camino) - gray</li>
+                <li>Opera - green</li>
+                <li>Konqueror - blue</li>
+                <li>Safari - black</li>
+                <li>Chrome - cyan</li>
+            </ul>
+            <h2>Current browser UserAgent string:</h2>
+            <div id="useragent"></div>
+            <script type="text/javascript">
+                document.getElementById('useragent').innerHTML = navigator.userAgent.toLowerCase();
+            </script>
+        </div>        
+    </body>
+</html>
