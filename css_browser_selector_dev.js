@@ -1,19 +1,17 @@
 /*
-CSS Browser Selector 0.6.2
+CSS Browser Selector 0.6.3
 Originally written by Rafael Lima (http://rafael.adm.br)
 http://rafael.adm.br/css_browser_selector
 License: http://creativecommons.org/licenses/by/2.5/
 
 Co-maintained by:
 https://github.com/verbatim/css_browser_selector
-
 */
 
 showLog=true;
 function log(m) {if ( window.console && showLog ) {console.log(m); }  }
 
-function css_browser_selector(u)
-	{
+function css_browser_selector(u) {
 	var	uaInfo = {},
 		screens = [320, 480, 640, 768, 1024, 1152, 1280, 1440, 1680, 1920, 2560],
 		allScreens = screens.length,
@@ -40,7 +38,7 @@ function css_browser_selector(u)
 		b=	[
 		
 			// browser
-			(!(/opera|webtv/i.test(ua))&&/msie\s(\d+)/.test(ua))?('ie ie'+(/trident\/4\.0/.test(ua) ? '8' : RegExp.$1))
+			((!(/opera|webtv/i.test(ua))&&/msie\s(\d+)/.test(ua)||(/trident\/.*rv:([0-9]{1,}[\.0-9]{0,})/.test(ua))))?('ie ie'+(/trident\/4\.0/.test(ua) ? '8' : RegExp.$1 == '11.0'?'11':RegExp.$1))
 			:is('firefox/')?g+ " " + f+(/firefox\/((\d+)(\.(\d+))(\.\d+)*)/.test(ua)?' '+f+RegExp.$2 + ' '+f+RegExp.$2+"_"+RegExp.$4:'')	
 			:is('gecko/')?g
 			:is('opera')?o+(/version\/((\d+)(\.(\d+))(\.\d+)*)/.test(ua)?' '+o+RegExp.$2 + ' '+o+RegExp.$2+"_"+RegExp.$4 : (/opera(\s|\/)(\d+)\.(\d+)/.test(ua)?' '+o+RegExp.$2+" "+o+RegExp.$2+"_"+RegExp.$3:''))
@@ -127,9 +125,10 @@ function css_browser_selector(u)
 		
 		
 		]; // b
+		
+	console.debug(ua);
 
-    function screenSize() 
-    	{
+    function screenSize() {
 		var w = window.outerWidth || html.clientWidth;
 		var h = window.outerHeight || html.clientHeight;
 		uaInfo.orientation = ((w<h) ? "portrait" : "landscape");
@@ -140,7 +139,7 @@ function css_browser_selector(u)
         for (var info in uaInfo) { widthClasses+=" "+info+"_"+ uaInfo[info]  };
 		html.className =  ( html.className +widthClasses  );
 		return widthClasses;
-    	} // screenSize
+	} // screenSize
 	
     window.onresize = screenSize;
 	screenSize();	
@@ -160,8 +159,6 @@ function css_browser_selector(u)
 	html.className =   ( cssbs + html.className.replace(/\b(no[-|_]?)?js\b/g,"")  ).replace(/^ /, "").replace(/ +/g," ");
 
 	return cssbs;
-	}
+}
 	
 css_browser_selector(navigator.userAgent);
-
-
