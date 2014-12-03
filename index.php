@@ -79,7 +79,7 @@
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="css_browser_selector_dev.js"></script>
+<script src="css_browser_selector.js"></script>
 
 <script>
         var classList = document.documentElement.className.split(/\s+/);

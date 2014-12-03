@@ -1,12 +1,12 @@
 /*
-CSS Browser Selector 0.6.1
+CSS Browser Selector (revived) 0.7
 Originally written by Rafael Lima (http://rafael.adm.br)
 http://rafael.adm.br/css_browser_selector
+Modified by Ian Armstrong (http://imperativeideas.com)
 License: http://creativecommons.org/licenses/by/2.5/
 
-Co-maintained by:
-https://github.com/verbatim/css_browser_selector
-
+Forked Repo:
+https://github.com/isarmstrong/css_browser_selector
 */
 
 showLog=true;
