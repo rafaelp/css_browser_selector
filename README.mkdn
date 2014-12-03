@@ -3,25 +3,30 @@
 CSS Browser Selector is a very small javascript which empowers CSS selectors.
 <br />You can now write code for: browser, browser version, platform, platform version, device, device version.
 <br />Best part: no more hacks; all compliant code.
-<br />More info: [http://rafael.adm.br/css_browser_selector](http://rafael.adm.br/css_browser_selector)
 <br />beta/experimental versions: [https://github.com/verbatim/css_browser_selector/](https://github.com/verbatim/css_browser_selector/)
 
 Identifies
 <br />browsers: Firefox; IE; Opera; Safari; Chrome, Konqueror, Iron
-<br />browser versions: (most importantly: ie6, ie7, ie8, ie9)
+<br />browser versions: (most importantly: ie6, ie7, ie8, ie9, ie10, ie11)
 <br />rendering engines: Webkit; Mozilla; Gecko
-<br />platforms/OSes: Mac; Win: Win8, Win7, Vista, WinXP, Win2k, WinNT; FreeBSD; Linux/x11 
+<br />platforms/OSes: Mac; Win: Win8.1, Win8, Win7, Vista, WinXP, Win2k, WinNT; FreeBSD; Linux/x11
 <br />devices: Ipod; Ipad; Iphone; WebTV; Blackberry; Android; J2me; RIM Playbook; mobile (generic)
 <br />enabled technology: JS (use in conjunction with &lt;html class="no-js"> for even more granular control)
 <br />language detection
 
-Recent contributors to 0.5, 0.6:
+Recent contributors to 0.5, 0.6, 0.7:
 
 more detailed IE detection:
 <br />https://github.com/kevingessner/css_browser_selector/
 
+modernized IE detection:
+https://github.com/isarmstrong/css_browser_selector
+
 more detailed WIN detection:
 <br />https://github.com/saar/css_browser_selector
+
+updated WIN detection
+https://github.com/isarmstrong/css_browser_selector
 
 no-js to js:
 <br />paul irish: http://paulirish.com/2009/avoiding-the-fouc-v3/
@@ -29,6 +34,10 @@ no-js to js:
 mac versioning
 <br />https://github.com/haraldmartin/css_browser_selector
 
+v0.7 2014-12-3
+<br />Modern IE detection
+<br />Support for Windows 8.1
+<br />Added an in-project demo page
 
 v0.6.1 2012-03-14
 <br />iOS version detection
@@ -148,3 +157,4 @@ Contributors:
 <br />Alex Wiltschko
 <br />Chris Warren and Tony Nelson (http://www.imagetrend.com)
 <br />glasser
+<br />Ian Armstrong (https://github.com/isarmstrong/)
