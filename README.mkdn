@@ -3,7 +3,6 @@
 CSS Browser Selector is a very small javascript which empowers CSS selectors.
 <br />You can now write code for: browser, browser version, platform, platform version, device, device version.
 <br />Best part: no more hacks; all compliant code.
-<br />More info: [http://rafael.adm.br/css_browser_selector](http://rafael.adm.br/css_browser_selector)
 <br />beta/experimental versions: [https://github.com/verbatim/css_browser_selector/](https://github.com/verbatim/css_browser_selector/)
 
 Identifies
