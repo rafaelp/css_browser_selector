@@ -15,14 +15,19 @@
             background: rgb(250,250,250);
         }
         li.ie, .ie .detected { background-color: yellow; }
-        li.ie7, .ie7 .detected { background-color: orange }
-        li.gecko, .gecko .detected { background-color: gray; }
-        li.win.gecko, .win.gecko .detected { background-color: red; }
+        li.ie6, .ie6 .detected { background-color: #8a6200 }
+        li.ie7, .ie7 .detected { background-color: #9c6d00 }
+        li.ie8, .ie8 .detected { background-color: #b78100 }
+        li.ie9, .ie9 .detected { background-color: #c68800 }
+        li.ie10, .ie10 .detected { background-color: #dd9e00 }
+        li.ie11, .ie11 .detected { background-color: #ffb935 }
+        li.gecko, .gecko .detected { background-color: #929292; }
+        li.win.gecko, .win.gecko .detected { background-color: #ff3b49; }
         li.linux, .linux.gecko .detected { background-color: pink; }
-        li.opera, .opera .detected { background-color: green; }
-        li.konqueror, .konqueror .detected { background-color: blue; }
+        li.opera, .opera .detected { background-color: #28a324; }
+        li.konqueror, .konqueror .detected { background-color: #5760ff; }
         li.webkit, .webkit .detected { background-color: rgb(149, 61, 245); }
-        li.chrome, .chrome .detected { background-color: cyan; }
+        li.chrome, .chrome .detected { background-color: #74ffbe; }
         .detected {
             display: inline-block;
             padding: 2px 10px;
@@ -41,7 +46,7 @@
 <body>
 
 <div class="wrap">
-    <h1>This page is designed to test the browser detection script</h1>
+    <h1>Information on this browser</h1>
 
     <div style="padding-left: 20px;"><p class="detected">USER AGENT STRING:<br /><?php echo isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : ''; ?></p></div>
 
@@ -49,7 +54,12 @@
         <ul class="legend">
             <li style="border-bottom: 1px solid black;"><strong>Legend</strong></li>
             <li class="ie">IE</li>
+            <li class="ie6">IE6</li>
             <li class="ie7">IE7</li>
+            <li class="ie8">IE8</li>
+            <li class="ie9">IE9 (Max for WinXP)</li>
+            <li class="ie10">IE10</li>
+            <li class="ie11">IE11</li>
             <li class="gecko">Gecko</li>
             <li class="win gecko">Windows Gecko</li>
             <li class="linux gecko">Linux Gecko</li>
