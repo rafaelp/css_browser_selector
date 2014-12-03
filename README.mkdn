@@ -158,3 +158,4 @@ Contributors:
 <br />Alex Wiltschko
 <br />Chris Warren and Tony Nelson (http://www.imagetrend.com)
 <br />glasser
+<br />Ian Armstrong (https://github.com/isarmstrong/)
