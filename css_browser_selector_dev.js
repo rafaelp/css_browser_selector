@@ -40,9 +40,12 @@ function css_browser_selector(u)
 		b=	[
 
 			// browser
-            (!(/opera|webtv/i.test(ua))&&!(/msie\s(\d+)/.test(ua))&&(/trident/.test(ua)))?'ie11':
-            (!(/opera|webtv/i.test(ua))&&/msie\s(\d+)/.test(ua))?('ie ie'+(/trident\/4\.0/.test(ua) ? '8' : RegExp.$1))
+            (!(/opera|webtv/i.test(ua))&&/msie\s(\d+)/.test(ua))?('ie ie'+(/trident\/7\.0/.test(ua) ? '11' : RegExp.$1))
+            :is (!(/opera|webtv/i.test(ua))&&/msie\s(\d+)/.test(ua))?('ie ie'+(/trident\/6\.0/.test(ua) ? '10' : RegExp.$1))
+            :is (!(/opera|webtv/i.test(ua))&&/msie\s(\d+)/.test(ua))?('ie ie'+(/trident\/5\.0/.test(ua) ? '9' : RegExp.$1))
+            :is (!(/opera|webtv/i.test(ua))&&/msie\s(\d+)/.test(ua))?('ie ie'+(/trident\/4\.0/.test(ua) ? '8' : RegExp.$1))
 			:is('firefox/')?g+ " " + f+(/firefox\/((\d+)(\.(\d+))(\.\d+)*)/.test(ua)?' '+f+RegExp.$2 + ' '+f+RegExp.$2+"_"+RegExp.$4:'')
+            :is('chrome')?w+   ' '+c+(/chrome\/((\d+)(\.(\d+))(\.\d+)*)/.test(ua)?' '+c+RegExp.$2 +((RegExp.$4>0) ? ' '+c+RegExp.$2+"_"+RegExp.$4:''):'')
 			:is('gecko/')?g
 			:is('opera')?o+(/version\/((\d+)(\.(\d+))(\.\d+)*)/.test(ua)?' '+o+RegExp.$2 + ' '+o+RegExp.$2+"_"+RegExp.$4 : (/opera(\s|\/)(\d+)\.(\d+)/.test(ua)?' '+o+RegExp.$2+" "+o+RegExp.$2+"_"+RegExp.$3:''))
 			:is('konqueror')?'konqueror'
@@ -66,8 +69,6 @@ function css_browser_selector(u)
 						? ' '+dv+( (RegExp.$2).replace(/ /g,"_") ).replace(/-/g,"_")
 						:''	)
 				) //android
-
-			:is('chrome')?w+   ' '+c+(/chrome\/((\d+)(\.(\d+))(\.\d+)*)/.test(ua)?' '+c+RegExp.$2 +((RegExp.$4>0) ? ' '+c+RegExp.$2+"_"+RegExp.$4:''):'')
 
 			:is('iron')?w+' iron'
 
