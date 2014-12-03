@@ -48,7 +48,7 @@
 <div class="wrap">
     <h1>Information on this browser</h1>
 
-    <div style="padding-left: 20px;"><p class="detected">USER AGENT STRING:<br /><?php echo isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : ''; ?></p></div>
+    <div style="padding-left: 20px;"><p class="detected">USER AGENT STRING:<br /><span id="UserAgent"></span></p></div>
 
     <div>
         <ul class="legend">
@@ -92,6 +92,10 @@
                 items.appendChild(item);
             }
         }
+
+        jQuery(function($) {
+            $('#UserAgent').append(navigator.userAgent);
+        });
 
         writeClasses();
 
